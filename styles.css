@@ -64,7 +64,7 @@ footer a{
 nav{
     background-color: #f4e8c1;
     width: 15vw;
-    height: 76vh;
+    min-height: 76vh;
 }
 
 nav ul{
@@ -119,17 +119,45 @@ nav a{
     margin-bottom: 5%;
     font-size: calc(2px + 1vw);
 }
-.photo{
-    width: 85vw;
-    display: grid;
+.photos{
+    width: 70vw;
+    padding: 3%;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.photo img{
+.photos{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phototext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+}
+
+.images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images img{
     width: 30vw;
+    height: 30vh;
+    object-fit: cover;
 }
 
 .exp{
     padding: 3%;
+    width: 70vw;
 }
 
 .exp h4{
@@ -152,6 +180,7 @@ nav a{
     nav{
         width: 100%;
         height: auto;
+        min-height: auto;
     }
 
     nav ul{
@@ -221,4 +250,21 @@ nav a{
     .exp li{
         font-size: calc(1px + 2.5vw);
     }
+
+    .photos{
+        width:100%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .images img{
+        width: 80vw;
+        padding: 1%;
+    }
+
 }
