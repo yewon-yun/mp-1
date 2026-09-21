@@ -65,14 +65,36 @@
                             <li>Implemented the game and integrated original artwork and interactions in Unity using C#.</li>
                         </ul>
                     </div>
+
+
+
+                    
+                    <div class="calculator">
+                        <h2 id="calc">Calculator!</h1>
+                        <label for "num1"></label>
+                        <input type="text" id="num1" placeholder="">
+                        <label for "num2"></label>
+                        <input type="text" id="num2" placeholder="">
+                        <button OnClick="doAdd()">+</button>
+                        <button OnClick="doMin()">-</button>
+                        <button OnClick="doMult()">*</button>
+                        <button OnClick="doDiv()">/</button>
+                        <button OnClick="doPow()">**</button>
+                        <button OnClick="doClear()">C</button>
+                        <h3 id="output"></h3>
+                    </div>
+                    
                     
                 </main>
+
+               
             </div>
 
             <footer>
                 <p>All rights reserved by Yewon Yun <a href="">Credits</a>&#169;</p>
             </footer>
         </div>
+        <script src="calculator.js"></script>
     </body>
 
     

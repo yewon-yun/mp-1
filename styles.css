@@ -26,12 +26,12 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    padding-left: 3%
 }
 
 header h1{
     font-family: 'Copperplate';
-    font-size: calc(1px + 5vw);
+    font-size: calc(1px + 4vw);
 }
 
 header p{
@@ -168,11 +168,135 @@ nav a{
     font-size: calc(1px + 1.1vw);
 }
 
+
+/*------------ipad screen-----------------------------------------------------------------------------*/
+
+
+
+@media screen and (max-width: 1000px){
+    .wrap{
+        flex-direction: column;
+    }
+
+    header{
+        height: 20vh;
+        background-color: #70a0af;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 3%
+    }
+
+    header h1{
+        font-family: 'Copperplate';
+        font-size: calc(1px + 5vw);
+    }
+
+    header p{
+        font-family: 'OCR A Std', monospace;
+        font-size: calc(1px + 1.5vw);
+    }
+    
+
+    nav{
+        width: 100%;
+        height: auto;
+        min-height: auto;
+    }
+
+    nav ul{
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav li{
+        padding: 1%;
+    }
+
+    nav a{ 
+        font-size: calc(1px + 2vw);
+    }
+
+    .whitepart main p{
+        font-size: calc(2px + 2.5vw);
+    }
+
+    .whitepart{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .whitepart img{
+        width: 90%;
+        max-width: none;
+        height: 65vh;
+        object-fit: cover;
+        object-position: center 40%;/*this is apparently used often with object fit. learned in W3Schools CSS tutorial*/
+        padding: 2%;
+    }
+
+    .whitepart main{
+        width: 70vw;
+    }
+
+    .exp{
+        padding: 7%;
+        font-size: calc(1px + 2vw);
+    }
+
+    .job{
+        padding-bottom: 5%;
+    }
+
+    .exp h2{
+        font-size: calc(4px + 2vw);
+    }
+
+    .exp h4{
+        font-size: calc(1px + 2vw);
+    }
+
+    .exp p{
+        font-size: calc(1px + 2vw);
+    }
+    
+    .exp li{
+        font-size: calc(1px + 2vw);
+    }
+
+    .photos{
+        width:100%;
+        max-width: 100%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .images img{
+        width: 80vw;
+        min-height: 50vh;
+        padding: 1%;
+    }
+
+}
+
 /*------------phone screen-----------------------------------------------------------------------------*/
 
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 750px){
     .wrap{
         flex-direction: column;
     }
@@ -253,6 +377,7 @@ nav a{
 
     .photos{
         width:100%;
+        max-width: 100%;
     }
 
     .container{
@@ -264,6 +389,7 @@ nav a{
 
     .images img{
         width: 80vw;
+        min-height: 20vh;
         padding: 1%;
     }
 
