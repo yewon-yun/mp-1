@@ -68,21 +68,32 @@
 
 
 
-                    
-                    <div class="calculator">
-                        <h2 id="calc">Calculator!</h1>
-                        <label for "num1"></label>
-                        <input type="text" id="num1" placeholder="">
-                        <label for "num2"></label>
-                        <input type="text" id="num2" placeholder="">
-                        <button OnClick="doAdd()">+</button>
-                        <button OnClick="doMin()">-</button>
-                        <button OnClick="doMult()">*</button>
-                        <button OnClick="doDiv()">/</button>
-                        <button OnClick="doPow()">**</button>
-                        <button OnClick="doClear()">C</button>
-                        <h3 id="output"></h3>
+                    <div class="cont">
+                        <div class="calculator">
+                            <h2>Calculator!</h1>
+                            <div class="calc">
+                                <div class="ins">
+                                    <label for "num1"></label>
+                                    <input type="text" id="num1" placeholder="first number">
+                                    <label for "num2"></label>
+                                    <input type="text" id="num2" placeholder="second number">
+                                </div>
+                                
+                                <div class="buttons">
+                                    <button OnClick="doAdd()">+</button>
+                                    <button OnClick="doMin()">-</button>
+                                    <button OnClick="doMult()">*</button>
+                                    <button OnClick="doDiv()">/</button>
+                                    <button OnClick="doPow()">**</button>
+                                    <button OnClick="doClear()">C</button>
+                                </div>
+                            </div>
+                            
+                            
+                            <h3 id="output"></h3>
+                        </div>
                     </div>
+                    
                     
                     
                 </main>
