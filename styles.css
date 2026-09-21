@@ -3,10 +3,18 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
 #page-wrapper{
-    background-color: white;
+    background-color: #ebf1f4;
     margin: 0 auto;
-    height: 100vh;
+    height: 100%;
+    width: 85%;
 }
 
 /*------Header & Footer------*/
@@ -78,15 +86,16 @@ nav li{
 nav a{
     text-decoration: none;
     color: #513721; 
-    font-size: 100%;
-
+    font-size: calc(0.3px + 1.2vw);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /*------Main Contents------*/
 
-.whitepart{
-    width: 85vw;
+.whitepart, .whitepart2{
+    width: 70vw;
     display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .whitepart img{
@@ -106,15 +115,32 @@ nav a{
     justify-content: center;
 }
 
-main p{
+.whitepart main p{
     margin-bottom: 5%;
+    font-size: calc(2px + 1vw);
+}
+.photo{
+    width: 85vw;
+    display: grid;
 }
 
+.photo img{
+    width: 30vw;
+}
 
-/*-----------------------------------------------------------------------------------------*/
+.exp{
+    padding: 3%;
+}
 
+.exp h4{
+    padding-top: 1%;
+}
 
+.exp li{
+    font-size: calc(1px + 1.1vw);
+}
 
+/*------------phone screen-----------------------------------------------------------------------------*/
 
 
 
@@ -125,7 +151,7 @@ main p{
 
     nav{
         width: 100%;
-        height: 10%;
+        height: auto;
     }
 
     nav ul{
@@ -133,27 +159,66 @@ main p{
         list-style: none;
         display: flex;
         flex-direction: row;
+        justify-content: center;
+        text-align: center;
     }
 
 
     nav li{
-        text-align: center;;
-        padding: 2%;
+        padding: 1%;
     }
 
     nav a{ 
         font-size: 100%;
     }
 
+    .whitepart main p{
+        font-size: calc(2px + 2.5vw);
+    }
+
     .whitepart{
+        flex-direction: column;
         width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
 
     .whitepart img{
-        min-width: 49%;
+        width: 90%;
+        max-width: none;
+        height: 40vh;
+        object-fit: cover;
+        object-position: center 30%;/*this is apparently used often with object fit. learned in W3Schools CSS tutorial*/
+        padding: 2%;
     }
 
     .whitepart main{
-        width: 55vw;
+        width: 70vw;
+    }
+
+    .exp{
+        padding: 7%;
+        font-size: calc(1px + 3vw);
+    }
+
+    .job{
+        padding-bottom: 5%;
+    }
+
+    .exp h2{
+        font-size: calc(4px + 3vw);
+    }
+
+    .exp h4{
+        font-size: calc(1px + 3vw);
+    }
+
+    .exp p{
+        font-size: calc(1px + 2.5vw);
+    }
+    
+    .exp li{
+        font-size: calc(1px + 2.5vw);
     }
 }
