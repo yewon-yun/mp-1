@@ -505,7 +505,9 @@ nav a{
     }
 
     .buttons button{
-        font-size: calc(1px + 3vw);
+        font-size: calc(1px + 2vw);
+        width: 40%;
+        padding: 2%;
     }
 
 }
