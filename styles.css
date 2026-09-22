@@ -92,7 +92,7 @@ nav a{
 
 /*------Main Contents------*/
 
-.whitepart, .whitepart2{
+.whitepart{
     width: 70vw;
     display: flex;
     font-family: 'Playfair Display';
@@ -441,7 +441,7 @@ nav a{
     .whitepart img{
         width: 90%;
         max-width: 100%;
-        height: 40vh;
+        height: 45vh;
         object-fit: cover;
         object-position: center 30%;/*this is apparently used often with object fit. learned in W3Schools CSS tutorial*/
         padding: 2%;
