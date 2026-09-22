@@ -11,7 +11,7 @@ body{
 }
 
 #page-wrapper{
-    background-color: #ebf1f4;
+    background-color: #ebf4f4;
     margin: 0 auto;
     height: 100%;
     width: 85%;
@@ -21,7 +21,7 @@ body{
 
 header{
     height: 20vh;
-    background-color: #70a0af;
+    background-color: #477c6f;
     color: white;
     display: flex;
     flex-direction: column;
@@ -30,19 +30,19 @@ header{
 }
 
 header h1{
-    font-family: 'Copperplate';
-    font-size: calc(1px + 4vw);
+    font-family: 'Londrina Outline';
+    font-size: calc(1px + 5vw);
 }
 
 header p{
-    font-family: 'OCR A Std', monospace;
-    font-size: calc(1px + 1vw);
+    font-family: 'Petit Formal Script';
+    font-size: calc(1px + 1.3vw);
 }
 
 footer{
     height: 4vh;
     color:white;
-    background-color: #70a0af;
+    background-color: #477c6f;
     display:flex;
     justify-content: right;
     text-align: center;
@@ -62,7 +62,7 @@ footer a{
 /*------Navigation Bar------*/
 
 nav{
-    background-color: #f4e8c1;
+    background-color: #f3e8c6;
     width: 15vw;
     min-height: 76vh;
 }
@@ -86,7 +86,7 @@ nav li{
 nav a{
     text-decoration: none;
     color: #513721; 
-    font-size: calc(0.3px + 1.2vw);
+    font-size: calc(0.3px + 1.4vw);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -95,7 +95,7 @@ nav a{
 .whitepart, .whitepart2{
     width: 70vw;
     display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Playfair Display';
 }
 
 .whitepart img{
@@ -123,7 +123,6 @@ nav a{
     width: 70vw;
     padding: 3%;
     display: flex;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .photos{
@@ -140,6 +139,7 @@ nav a{
     justify-content: center;
     align-items: center;
     padding-bottom: 1%;
+    font-family: 'Playfair Display';
 }
 
 .images{
@@ -157,7 +157,7 @@ nav a{
 
 .exp{
     padding: 3%;
-    width: 100%;
+    width: 70vw; /*THE NAVIGATION BAR HAS A PROBLEM-----------!!!!!!!!!!!!!!!!!!!!!---*/
 }
 
 .exp h4{
@@ -179,7 +179,7 @@ nav a{
 .calculator{
     background-color: #f1cbcb;
     width: 50%;
-    border: 1px solid #cf7d7d;
+    border: 1px solid #bb6363;
     border-radius: 20px;
     padding: 3%;
     display: flex;
@@ -187,13 +187,13 @@ nav a{
     justify-content: center;
     align-items: center;
     margin-top: 5%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Londrina Outline';
 }
 
 .calculator h2{
-    color:#cf7d7d;
+    color:#bb6363;
     padding-bottom: 1%;
-    font-size: calc(1px + 2.5vw);
+    font-size: calc(1px + 3vw);
 }
 
 .calc{
@@ -204,7 +204,7 @@ nav a{
 }
 
 .ins input{
-    border: 2px solid #cf7d7d;
+    border: 2px solid #bb6363;
     border-radius: 5px;
     height: 5vh;
     display:flex;
@@ -219,22 +219,25 @@ nav a{
 
 .buttons button{
     background-color: floralwhite;
-    border: 2px solid #cf7d7d;
-    color: #cf7d7d;
+    border: 2px solid #bb6363;
+    color: #bb6363;
     width: 30%;
     height: calc(1px + 3vh);
     border-radius: 10px;
+    font-size: calc(1px + 1vw);
+    text-align: center;
 }
 
 #output{
-    border: 2px solid #cf7d7d;
+    border: 2px solid #bb6363;
     border-radius: 10px;
     background-color: white;
-    color: #cf7d7d;
+    color: #bb6363;
     width: 40%;
     margin-top: 2%;
     padding: 3% 4% 3% 4%;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -248,9 +251,6 @@ nav a{
     }
 
     header{
-        height: 20vh;
-        background-color: #70a0af;
-        color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -258,13 +258,11 @@ nav a{
     }
 
     header h1{
-        font-family: 'Copperplate';
         font-size: calc(1px + 5vw);
     }
 
     header p{
-        font-family: 'OCR A Std', monospace;
-        font-size: calc(1px + 1.5vw);
+        font-size: calc(1px + 1.7vw);
     }
     
 
@@ -319,6 +317,7 @@ nav a{
     .exp{
         padding: 7%;
         font-size: calc(1px + 2vw);
+        width: 100%;
     }
 
     .job{
@@ -363,6 +362,18 @@ nav a{
         width:60%;
     }
 
+    .calculator h2{
+        font-size: calc(2px + 5vw);
+    }
+
+    .buttons button{
+        font-size: calc(1px + 1.5vw);
+    }
+
+    .ins input{
+        font-size: calc(1px + 2vw);
+    }
+
 }
 
 /*------------phone screen-----------------------------------------------------------------------------*/
@@ -372,6 +383,14 @@ nav a{
 @media screen and (max-width: 750px){
     .wrap{
         flex-direction: column;
+    }
+
+    header h1{
+        font-size: calc(1px + 7vw);
+    }
+
+    header p{
+        font-size: calc(1px + 2vw);
     }
 
     nav{
@@ -426,6 +445,7 @@ nav a{
     .exp{
         padding: 7%;
         font-size: calc(1px + 3vw);
+        width: 100%;
     }
 
     .job{
@@ -468,6 +488,14 @@ nav a{
 
     .calculator{
         width:80%;
+    }
+
+    .calculator h2{
+        font-size: calc(3px + 6vw);
+    }
+
+    .buttons button{
+        font-size: calc(1px + 3vw);
     }
 
 }
