@@ -2,6 +2,13 @@ function doAdd(){
     let num1= Number(document.getElementById("num1").value);
     let num2= Number(document.getElementById("num2").value);
     let num3= num1 + num2;
+
+    if (num3<0){
+        document.getElementById("output").style.color = "red";
+    }else{
+        document.getElementById("output").style.color = "brown";
+    }
+
     document.getElementById("output").innerHTML=num3;
 }
 
@@ -9,6 +16,12 @@ function doMin(){
     let num1= Number(document.getElementById("num1").value);
     let num2= Number(document.getElementById("num2").value);
     let num3= num1 - num2;
+    if (num3<0){
+        document.getElementById("output").style.color = "red";
+    }else{
+        document.getElementById("output").style.color = "brown";
+    }
+
     document.getElementById("output").innerHTML=num3;
 }
 
@@ -16,6 +29,13 @@ function doMult(){
     let num1= Number(document.getElementById("num1").value);
     let num2= Number(document.getElementById("num2").value);
     let num3= num1 * num2;
+    
+    if (num3<0){
+        document.getElementById("output").style.color = "red";
+    }else{
+        document.getElementById("output").style.color = "brown";
+    }
+
     document.getElementById("output").innerHTML=num3;
 }
 
@@ -23,6 +43,13 @@ function doDiv(){
     let num1= Number(document.getElementById("num1").value);
     let num2= Number(document.getElementById("num2").value);
     let num3= num1/num2;
+    
+    if (num3<0){
+        document.getElementById("output").style.color = "red";
+    }else{
+        document.getElementById("output").style.color = "brown";
+    }
+
     document.getElementById("output").innerHTML=num3;
 }
 
@@ -31,9 +58,17 @@ function doPow(){
     let num1= Number(document.getElementById("num1").value);
     let num2= Number(document.getElementById("num2").value);
     let num3=1;
+
     for (let i=0;i<num2;i++){
         num3 = num3*num1;
     }
+
+    if (num3<0){
+        document.getElementById("output").style.color = "red";
+    }else{
+        document.getElementById("output").style.color = "brown";
+    }
+    
     document.getElementById("output").innerHTML=num3;
 }
 
